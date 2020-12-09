@@ -16,7 +16,7 @@ namespace AdventOfCode2020.challenge
             var answer = GetInputAsLongList(9).Skip(25).SkipWhile((n, i) => GetInputAsLongList(9).Skip(i).Take(25).SelectMany(s => GetInputAsLongList(9).Skip(i).Take(25).Select(p => p + s)).Any(s => s.Equals(n))).First();
             GetInputAsLongList(9).TakeWhile(n => !n.Equals(answer)).Reverse().ToList().ForEach(i =>
             {
-                if (i < answer && crawler.Sum() != answer)
+                if (crawler.Sum() != answer)
                 {
                     crawler.Add(i);
                     while (crawler.Sum() > answer)

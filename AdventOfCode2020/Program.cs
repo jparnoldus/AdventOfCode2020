@@ -7,9 +7,9 @@ namespace AdventOfCode2020
     {
         public const string INPUT_FILE_DIR = "input";
 
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine(Day08.Solve2());
+            Console.WriteLine(Day09.Solve2());
         }
     }
 }

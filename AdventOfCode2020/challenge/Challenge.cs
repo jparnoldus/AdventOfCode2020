@@ -56,6 +56,28 @@ namespace AdventOfCode2020.challenge
             return list;
         }
 
+        public static List<long> GetInputAsLongList(int day)
+        {
+            List<long> list = new List<long>();
+
+            try
+            {
+                using (StreamReader sr = new StreamReader(GetPath(day)))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        list.Add(long.Parse(sr.ReadLine()));
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            return list;
+        }
+
         public static List<List<int>> GetInputAsCsIntListList(int day)
         {
             List<List<int>> list = new List<List<int>>();

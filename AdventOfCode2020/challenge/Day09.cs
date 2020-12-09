@@ -24,7 +24,7 @@ namespace AdventOfCode2020.challenge
                 }
             });
 
-             return crawler.Min() + crawler.Max();
+            return crawler.Min() + crawler.Max();
         }
     }
 }

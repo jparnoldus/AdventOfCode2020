@@ -9,7 +9,7 @@ namespace AdventOfCode2020
 
         static void Main()
         {
-            Console.WriteLine(Day09.Solve2());
+            Console.WriteLine(Day10.Solve2());
         }
     }
 }
